@@ -49,15 +49,13 @@ public class TreeDemo {
 	class BinarySearchTree{
 
 	   Node root;
-	  
-	   
-	   /*
-	   recursive insert method
-		
-	   */
-	   /*
-	   inserts a node into the tree
-	   */
+
+
+	   /**
+		* Inserts a new value into the binary search tree.
+		*
+		* @param value the value to insert into the tree
+		*/
 	   public void insert(int value){
 	      //tree is empty
 	      if(root == null){
@@ -88,11 +86,12 @@ public class TreeDemo {
 	      
 	      }//closing main if-else 
 	   }
-	   
-	   /*
-	   pre-order traversal
-	   Prints the value of every node preorder
-	   */
+
+		/**
+		 * Performs a pre-order traversal of the binary search tree.
+		 *
+		 * @param root the root node of the tree/subtree
+		 */
 	   public void preOrderTraversal(Node root){
 		   //implement in here
 	        if (root != null) {
@@ -103,11 +102,13 @@ public class TreeDemo {
 		   
 	   }
 
-	   
-	   
-	   /*
-	   in-order traversal
-	   */
+
+
+		/**
+		 * Performs an in-order traversal of the binary search tree.
+		 *
+		 * @param root the root node of the tree/subtree
+		 */
 	   public void inOrderTraversal(Node root){
 		   //implement in here
 	        if (root != null) {
@@ -117,13 +118,14 @@ public class TreeDemo {
 	        }
 	
 	   }
-	   
-	   
-	   
-	   /*
-	   post-order traversal
-	   */
-	  
+
+
+
+		/**
+		 * Performs a post-order traversal of the binary search tree.
+		 *
+		 * @param root the root node of the tree/subtree
+		 */
 	   public void postOrderTraversal(Node root){
 		   //implement in here
 	        if (root != null) {
@@ -133,13 +135,16 @@ public class TreeDemo {
 	        }
 		   
 	   }
-	   
-	   
-	   
-	   /*
-	   a method to find the node in the tree
-	   with a specific value
-	   */
+
+
+
+		/**
+		 * Searches for a specific value in the binary search tree.
+		 *
+		 * @param root the root node of the tree/subtree
+		 * @param key  the value to search for
+		 * @return true if the value is found, false otherwise
+		 */
 	   public boolean find(Node root, int key){
 		 //implement in here
 	        if (root == null) {
@@ -154,13 +159,15 @@ public class TreeDemo {
 	        }
 		  
 	   }
-	   
-	   
-	   
-	   /*
-	   a method to find the node in the tree
-	   with a smallest key
-	   */
+
+
+
+		/**
+		 * Finds the minimum value in the binary search tree.
+		 *
+		 * @param root the root node of the tree/subtree
+		 * @return the minimum value in the tree, or Integer.MIN_VALUE if the tree is empty
+		 */
 	   public int getMin(Node root){
       //implement in here
 	        if (root == null) {
@@ -173,13 +180,15 @@ public class TreeDemo {
 	        return current.value;
 	      
 	   }
-	  
-	  
-	  
-	   /*
-	   a method to find the node in the tree
-	   with a largest key
-	   */
+
+
+
+		/**
+		 * Finds the maximum value in the binary search tree.
+		 *
+		 * @param root the root node of the tree/subtree
+		 * @return the maximum value in the tree, or Integer.MAX_VALUE if the tree is empty
+		 */
 	   public int getMax(Node root){
 		   //implement in here
 	       if (root == null) {
@@ -191,13 +200,16 @@ public class TreeDemo {
 	        }
 	        return current.value;
 	   }
-	   
-	   
-	   
-	   /*
-	   this method will not compile until getMax
-	   is implemented
-	   */
+
+
+
+		/**
+		 * Deletes a node with a specific value from the binary search tree.
+		 *
+		 * @param root the root node of the tree/subtree
+		 * @param key  the value of the node to delete
+		 * @return the new root node of the tree/subtree after deletion
+		 */
 	   public Node delete(Node root, int key){
 	      
 	      if(root == null){
