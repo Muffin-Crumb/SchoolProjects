@@ -55,7 +55,6 @@ public class TreeDemo {
 		* Inserts a new value into the binary search tree.
 		*
 		* @param value the value to insert into the tree
-		*
 		*/
 	   public void insert(int value){
 	      //tree is empty
